@@ -1,49 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <%= csrf_meta_tags %>
-    <title><%= titre %></title>
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <%= stylesheet_link_tag 'boostrap', :media => 'screen' %>
-    <%= stylesheet_link_tag 'theme', :media => 'screen' %>
-
-  </head>
-
-  <body>
-
-      <header>
-
-
-        <nav id="mainNav" class="">
-          <div class="container">
-            <div class="col-xs-2">
-              <%= image_tag('Logo.png', :alt => "Application Exemple", :class => "round logo" :style => "height : 50px; width: 50px;") %>
-            </div>
-            <!-- Brand and toggle get grouped for better mobile display -->
-
-            <div class="col-xs-10">
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="navbar-collapse" >
-                <ul class="menuLeft">
-                  <li><%= link_to "Accueil", home_path %></li>
-                  <li><%= link_to "Contact", contact_path %></li>
-                  <li><%= link_to "Help", help_path %></li>
-
-
-
-                </ul>
-              </div>
-            </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-      </header>
-      <div class="container">
-    <%= yield %>
-  </div>
-  </body>
+<%= render 'layouts/header' %>
+<div class="container">
+  <%= yield %>
+</div>
+<%= render 'layouts/footer' %>
+</body>
 </html>
