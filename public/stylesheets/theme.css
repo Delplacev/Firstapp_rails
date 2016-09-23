@@ -147,8 +147,10 @@ p {
   }
 }
 header {
+  padding: 5px 0;
   position: relative;
   width: 100%;
+  height: 60px;
   min-height: auto;
   overflow-y: hidden;
   background: url("../images/bg-pattern.png"), #7b4397;
@@ -189,9 +191,7 @@ header .device-container .screen img {
   border-radius: 3px;
 }
 @media (min-width: 768px) {
-  header {
-    min-height: 100%;
-  }
+
   header .header-content {
     text-align: left;
     padding: 0;
@@ -371,9 +371,11 @@ section.contact ul.list-social li.social-google-plus a:hover {
 }
 footer {
   background-color: #222222;
-  padding: 25px 0;
+  padding: 5px 0;
+  width: 100%;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
+  position: absolute; bottom:0px;
 }
 footer p {
   font-size: 12px;
@@ -447,4 +449,35 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.menuLeft{
+  float: right;
+}
+.menuLeft li {
+  padding: 5px;
+  display: inline;
+  float: left;
+}
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #ffc;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
 }
