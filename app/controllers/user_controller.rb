@@ -1,5 +1,6 @@
 class UserController < ApplicationController
   def new
+     @user = User.new
     @titre = "Inscription"
   end
 
@@ -7,4 +8,6 @@ class UserController < ApplicationController
     @user = User.find(params[:id])
     @titre = @user.nom
   end
+
+  
 end
