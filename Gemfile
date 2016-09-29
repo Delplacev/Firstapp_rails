@@ -44,6 +44,7 @@ group :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'annotate'
+   gem 'faker'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
